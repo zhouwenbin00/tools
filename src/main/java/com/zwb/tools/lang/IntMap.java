@@ -114,7 +114,7 @@ public class IntMap<K> implements Map<K, Integer> {
         return getAndUpdate(key, oldValue -> accumulatorFunction.applyAsInt(oldValue, x));
     }
 
-    private int accumulateAndGet(K key, int x, IntBinaryOperator accumulatorFunction) {
+    public int accumulateAndGet(K key, int x, IntBinaryOperator accumulatorFunction) {
         return updateAndGet(key, oldValue -> accumulatorFunction.applyAsInt(oldValue, x));
     }
 
@@ -136,7 +136,7 @@ public class IntMap<K> implements Map<K, Integer> {
      * @param updaterFunction
      * @return
      */
-    private int getAndUpdate(K key, IntUnaryOperator updaterFunction) {
+    public int getAndUpdate(K key, IntUnaryOperator updaterFunction) {
         AtomicInteger holder = new AtomicInteger();
         map.compute(key, (k, v) -> {
             int oldValue = (v == null) ? 0 : v;
