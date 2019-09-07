@@ -1,5 +1,7 @@
 package com.zwb.tools.lang;
 
+import com.zwb.tools.annotation.NotNull;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +26,7 @@ public class IntMap<K> implements Map<K, Integer> {
      * @param key
      * @return
      */
-    public int getCount(K key) {
+    public @NotNull int getCount(K key) {
         return map.getOrDefault(key, 0);
     }
 
