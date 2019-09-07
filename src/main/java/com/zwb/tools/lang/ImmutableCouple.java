@@ -4,7 +4,7 @@ package com.zwb.tools.lang;
 import com.zwb.tools.annotation.ThreadSafe;
 
 /**
- * 不可变的一对
+ * 不可变的俩
  *
  * @Auther: zhouwenbin
  * @Date: 2019/9/7 11:04

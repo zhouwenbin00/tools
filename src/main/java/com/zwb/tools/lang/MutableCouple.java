@@ -5,7 +5,7 @@ import com.zwb.tools.annotation.Nullable;
 import com.zwb.tools.annotation.ThreadUnsafe;
 
 /**
- * 可变的一对
+ * 可变的俩
  *
  * @Auther: zhouwenbin
  * @Date: 2019/9/7 11:07
