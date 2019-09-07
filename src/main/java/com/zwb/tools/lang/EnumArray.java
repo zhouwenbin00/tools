@@ -38,6 +38,7 @@ public class EnumArray<E extends Enum<E>, T> {
 
     /**
      * 根据索引获取值
+     * 调用者自行保证安全
      * @param index
      * @return
      */
@@ -61,6 +62,7 @@ public class EnumArray<E extends Enum<E>, T> {
 
     /**
      * 根据索引设置值
+     * 调用者自行保证安全
      * @param index
      * @param object
      * @return
