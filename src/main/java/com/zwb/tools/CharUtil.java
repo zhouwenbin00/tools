@@ -1,3 +1,4 @@
+package com.zwb.tools;
 
 /**
  * 字符工具类

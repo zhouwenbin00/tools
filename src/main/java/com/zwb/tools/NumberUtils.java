@@ -1,3 +1,5 @@
+package com.zwb.tools;
+
 import java.math.BigDecimal;
 
 /**
