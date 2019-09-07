@@ -2,6 +2,7 @@ package com.zwb.tools.lang;
 
 
 import com.zwb.tools.annotation.Nullable;
+import com.zwb.tools.annotation.ThreadUnsafe;
 
 /**
  * 可变的一对
@@ -9,6 +10,7 @@ import com.zwb.tools.annotation.Nullable;
  * @Auther: zhouwenbin
  * @Date: 2019/9/7 11:07
  */
+@ThreadUnsafe
 public class MutableCouple<L, R> implements Couple<L, R> {
     private L left;
     private R right;
